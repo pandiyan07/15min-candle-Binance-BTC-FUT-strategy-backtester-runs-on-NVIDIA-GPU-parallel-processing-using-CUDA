@@ -1,6 +1,5 @@
 # GPU-Accelerated Crypto/Stock Trading Strategy Backtester
 
----
 
 ## Table of Contents
 1. [About The Project](#about-the-project)
@@ -54,8 +53,8 @@ This repository contains a high-performance quantitative trading backtesting sui
 ### Installation
 1. Clone the repository:
 ```bash
-git clone [https://github.com/your-username/repo-name.git](https://github.com/your-username/repo-name.git)
-cd repo-name
+git clone [https://github.com/pandiyan07/15min-candle-Binance-BTC-FUT-strategy-backtester-runs-on-NVIDIA-GPU-parallel-processing-using-CUDA.git](https://github.com/pandiyan07/15min-candle-Binance-BTC-FUT-strategy-backtester-runs-on-NVIDIA-GPU-parallel-processing-using-CUDA.git)
+cd 15min-candle-Binance-BTC-FUT-strategy-backtester-runs-on-NVIDIA-GPU-parallel-processing-using-CUDA
 ```
 
 2. Install the required Python dependencies:
@@ -149,9 +148,7 @@ Inputs, input file paths, and output destinations can be configured directly ins
 
 | Python File / Script | Description / Version Changes |
 | --- | --- |
-| [`cuda 5min v10.py`](https://www.google.com/search?q=cuda%25205min%2520v10.py) | Refined GPU backtester utilizing a 5 EMA and 13 SMA crossover system, incorporating consecutive trend-bar checks and strict entry variation boundaries.
-
- |
+| [`cuda 5min v10.py`](https://www.google.com/search?q=cuda%25205min%2520v10.py) | Refined GPU backtester utilizing a 5 EMA and 13 SMA crossover system, incorporating consecutive trend-bar checks and strict entry variation boundaries. |
 | [`cuda 15min v1.py`](https://www.google.com/search?q=cuda%252015min%2520v1.py) | Initial EMA 5 / SMA 34 crossover framework with entry variation rules and trailing stop-loss (TSL).
 
  |
