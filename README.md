@@ -23,7 +23,7 @@
 ---
 
 ## About The Project
-This repository contains a high-performance quantitative trading backtesting suite designed to run parameter optimization sweeps across massive historical OHLC datasets. By leveraging NVIDIA CUDA via **CuPy**, the framework accelerates multi-parameter evaluations for trading algorithms—ranging from Moving Average (EMA/SMA) crossovers and MACD variations to advanced Heikin-Ashi pattern recognition and custom multi-candle breakout rules.
+This repository contains a high-performance quantitative trading backtesting suite designed to run parameter optimization sweeps across massive historical 15 minute OHLC datasets. By leveraging NVIDIA CUDA via **CuPy**, the framework accelerates multi-parameter evaluations for trading algorithms—ranging from Moving Average (EMA/SMA) crossovers and MACD variations to advanced Heikin-Ashi pattern recognition and custom multi-candle breakout rules.
 
 ---
 
