@@ -174,13 +174,13 @@ Inputs, input file paths, and output destinations can be configured directly ins
 | [`cuda 15min v23 - heiknashi 7-14 ma-crossover.py`](https://www.google.com/search?q=cuda%252015min%2520v23%2520-%2520heiknashi%25207-14%2520ma-crossover.py) | Uses a 7 and 14 SMA crossover system on Heikin-Ashi data with custom volatility parameter bounds.|
 | [`cuda 15min v24 - heiknashi v23 entry condition v22 exit condition.py`](https://www.google.com/search?q=cuda%252015min%2520v24%2520-%2520heiknashi%2520v23%2520entry%2520condition%2520v22%2520exit%2520condition.py) | Merges v23 entry rules with v22 profit-percentage target exit mechanisms.|
 | [`cuda 15min v25 - heiknashi and normal candles combined.py`](https://www.google.com/search?q=cuda%252015min%2520v25%2520-%2520heiknashi%2520and%2520normal%2520candles%2520combined.py) | Evaluates conditions blending raw OHLC candle heights with Heikin-Ashi trend metrics.|
-| [`cuda 15min v26 - crossover exit only in v25.py`](cuda%2015min%20v26%20-%20crossover exit only in v25.py) | Streamlines v25 to use strict MA crossover exit triggers.|
-| [`cuda 15min v27 - entry cond changed in v26.py`](cuda%2015min%20v27%20-%20entry cond changed in v26.py) | Refines entry calculations using specific open/close differences from prior candles.|
-| [`cuda 15min v28 - modified v27.py`](cuda%2015min%20v28%20-%20modified v27.py) | Incorporates dynamic volatility threshold checks, strict high/low candle boundaries, and special large-candle triggers.|
+| `cuda 15min v26 - crossover exit only in v25.py` | Streamlines v25 to use strict MA crossover exit triggers.|
+| `cuda 15min v27 - entry cond changed in v26.py` | Refines entry calculations using specific open/close differences from prior candles.|
+| `cuda 15min v28 - modified v27.py` | Incorporates dynamic volatility threshold checks, strict high/low candle boundaries, and special large-candle triggers.|
 | `cuda 15min v29 - volatality removed from v27.py` | Strips out standard volatility filters to evaluate pure candle height parameters.|
 | `cuda 15min v30 - simultaneous trade in v27.py`| Implements concurrent independent long and short trade tracking on top of v27 logic.|
 | [`net profit totaller.py`](https://www.google.com/search?q=net%2520profit%2520totaller.py) | Aggregates and sums net profit results across multi-month CSV exports.|
-| [`Heikanashi trade entry and exit rules.txt`](Heikanashi%20trade entry and exit rules.txt) | Reference document outlining rule definitions for Heikin-Ashi executions.|
+| `Heikanashi trade entry and exit rules.txt` | Reference document outlining rule definitions for Heikin-Ashi executions.|
 
 ---
 
