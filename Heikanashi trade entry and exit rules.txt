@@ -1,0 +1,49 @@
+Long trade
+Rule 1 - Trade should be taken when the last 10 1hr 5ema values
+should be above 150 points above and 150 points below
+OR ELSE IT WILL BE CONSIDERED AS A SIDEWAYS MARKET
+Rule 2 - 15min 5ema > 1hr 5ema 
+Rule 3 - Last 5 heiknashi candles should be green
+
+
+Condition 1 = entry price should oc2 of the current candle
+Condition 2 = Since this is a heiknashi candle, so we need to trade using the last
+                        previous candle and not using the current candle
+
+
+parameter for backtesting would be -
+- ATR_value with the value ranging from 100 to 1000
+- MAX_VOLATILE with the value ranging from 100 to 700
+- MIN_VOLATILE with the value ranging from 100 to 700
+
+Short trade entry condition - 
+Rule 1 - previous_7sma_value > current_7sma_value
+Rule 2 - current_heiknashi_close_value < previous_heiknashi_close_value < second_previous_heiknashi_close_value
+Rule 3 - second_previous_heiknashi_close_value < second_previous_heiknashi_open_value 
+Rule 4 - previous_heiknashi_close_value < previous_heiknashi_open_value 
+Rule 5 - current_heiknashi_close_value < current_heiknashi_open_value <  current_7sma_value
+Rule 6 - atr > ATR_value parameter
+Rule 7 -
+if ((last 10 7sma value's greatest number) > current_7sma_value) 
+    result_1 = (last 10 7sma value's greatest number) - current_7sma_value > MAX_VOLATILE paramter
+else:
+    result_1 =current_7sma_value - (last 10 7sma value's greatest number) > MAX_VOLATILE parameter
+
+if ((last 10 7sma value's most smallest number) > current_7sma_value) 
+    result_2 = (last 10 7sma value's smallest/minimum number) - current_7sma_value > MIN_VOLATILE
+else:
+    result_2 = current_7sma_value - (last 10 7sma value's smallest/minimum number) > MIN_VOLATILE
+
+atlast this Rule 7 should reuturn True or False based on = result1 or result2
+
+Short trade EXIT RULE = 
+Rule 1 - if current_profit < 500
+    current_heiknashi_close_value < current_7sma
+else:
+    (entry_price - current_heiknashi_close_value) < 80% of the current profit value
+
+In the same way for Long condition same conditions should be used with reversed greater than and less than symbols
+
+And also finally the 3 parameters ATR_value, MAX_VOLATILE, MIN_VOLATILE should be added to the output columns
+along with the other columns
+
