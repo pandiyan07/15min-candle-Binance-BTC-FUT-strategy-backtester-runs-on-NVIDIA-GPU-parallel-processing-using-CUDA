@@ -149,102 +149,38 @@ Inputs, input file paths, and output destinations can be configured directly ins
 | Python File / Script | Description / Version Changes |
 | --- | --- |
 | [`cuda 5min v10.py`](https://www.google.com/search?q=cuda%25205min%2520v10.py) | Refined GPU backtester utilizing a 5 EMA and 13 SMA crossover system, incorporating consecutive trend-bar checks and strict entry variation boundaries. |
-| [`cuda 15min v1.py`](https://www.google.com/search?q=cuda%252015min%2520v1.py) | Initial EMA 5 / SMA 34 crossover framework with entry variation rules and trailing stop-loss (TSL).
-
- |
-| [`cuda 15min v2.py`](https://www.google.com/search?q=cuda%252015min%2520v2.py) | Tests separate SMA 34 entry and exit variation parameters.
-
- |
-| [`cuda 15min v3.py`](https://www.google.com/search?q=cuda%252015min%2520v3.py) | Base crossover script optimized around static TSL execution paths.
-
- |
-| [`cuda 15min v4.py`](https://www.google.com/search?q=cuda%252015min%2520v4.py) | Adds MA deviation and SMA 34 variation conditions with independent long/short TSL controls.
-
- |
-| [`cuda 15min v5.py`](https://www.google.com/search?q=cuda%252015min%2520v5.py) | Restructured parameter ordering and output formatting.
-
- |
-| [`cuda 15min v6 deviation.py`](https://www.google.com/search?q=cuda%252015min%2520v6.py) | Focuses specifically on long/short MA deviation parameters paired with trailing stops.
-
- |
-| [`cuda 15min v7 variation.py`](https://www.google.com/search?q=cuda%252015min%2520v7.py) | Incorporates SMA 34 variation checks alongside trailing stop-losses.
-
- |
-| [`cuda 15min v8.py`](https://www.google.com/search?q=cuda%252015min%2520v8.py) | Permits simultaneous long and short active trades with independent trailing stop management.
-
- |
-| [`cuda 15min v9 with atr.py`](https://www.google.com/search?q=cuda%252015min%2520v9.py) | Integrates Average True Range (ATR) threshold filtering into multi-condition entries.
-
- |
-| [`cuda 15min v10.py`](https://www.google.com/search?q=cuda%252015min%2520v10.py) | Refines parallel long/short trade execution logic with integrated ATR and MA deviation filters.
-
- |
-| [`cuda 15min v11 MACD with static TSL.py`](https://www.google.com/search?q=cuda%252015min%2520v11%2520MACD%2520with%2520static%2520TSI.py) | Combines MACD line/signal crossovers and histogram thresholds with static TSL exits.
-
- |
-| [`cuda 15min v12 MACD only.py`](https://www.google.com/search?q=cuda%252015min%2520v12%2520MACD%2520only.py) | Streamlines execution to single-position active trades governed purely by MACD signal crosses.
-
- |
-| [`cuda 15min v13 - trading v12 simultaneously.py`](https://www.google.com/search?q=cuda%252015min%2520v13%2520-%2520trading%2520v12%2520simultaneously.py) | Extends MACD strategy to permit independent, simultaneous long and short positions.
-
- |
-| [`cuda 15min v14 - new v5 with 21sma.py`](https://www.google.com/search?q=cuda%252015min%2520v14%2520-%2520new%2520v5%2520with%252021sma.py) | Incorporates a 21 SMA benchmark alongside EMA 5 for faster deviation and trend evaluation.
-
- |
-| [`cuda 15min v15 - v12 with 21sma.py`](https://www.google.com/search?q=cuda%252015min%2520v15%2520-%2520v12%2520with%252021sma.py) | Integrates MACD entries with a 21 SMA baseline for exit confirmation signals.
-
- |
-| [`cuda 15min v16 - v12 with 13sma & sumof_last_four_histogram.py`](https://www.google.com/search?q=cuda%252015min%2520v16%2520-%2520v12%2520with%252013sma%2520%2526%2520sumof_last_four_histogram.py) | Uses a 13 SMA line and incorporates a cumulative sum of the last four MACD histogram bars.
-
- |
-| [`cuda 15min v17 - variation using 13sma.py`](https://www.google.com/search?q=cuda%252015min%2520v17%2520-%2520variation%2520using%252013sma.py) | Evaluates entry variations based on 13 SMA slope differentials combined with ATR filters.
-
- |
-| [`cuda 15min v18 - v15 with 13macd.py`](https://www.google.com/search?q=cuda%252015min%2520v18%2520-%2520v15%2520with%252013macd.py) | Adjusts MACD fast/slow periods to a (5, 13, 9) configuration for faster responsiveness.
-
- |
-| [`cuda 15min v19 - v17 with tsl.py`](https://www.google.com/search?q=cuda%252015min%2520v19%2520-%2520v17%2520with%2520tsl.py) | Appends custom trailing stop-loss metrics to the 13 SMA variation framework.
-
- |
-| [`cuda 15min v20 - v17 with 3 candle tecnique.py`](https://www.google.com/search?q=cuda%252015min%2520v20%2520-%2520v17%2520with%25203%2520candle%2520technique.py) | Implements a specialized multi-candle open-close weighting rule across consecutive bars.
-
- |
-| [`cuda 15min v21 - heiknashi with 3 candle technique.py`](https://www.google.com/search?q=cuda%252015min%2520v21%2520-%2520heiknashi%2520with%25203%2520candle%2520technique.py) | Converts data to Heikin-Ashi candles, applying 7 SMA slope rules and 3-candle confirmation patterns.
-
- |
-| [`cuda 15min v22 - heiknashi 7sma.py`](https://www.google.com/search?q=cuda%252015min%2520v22%2520-%2520heiknashi%25207sma.py) | Combines Heikin-Ashi 7 SMA conditions, ATR thresholds, and dynamic profit-based exit rules.
-
- |
-| [`cuda 15min v23 - heiknashi 7-14 ma-crossover.py`](https://www.google.com/search?q=cuda%252015min%2520v23%2520-%2520heiknashi%25207-14%2520ma-crossover.py) | Uses a 7 and 14 SMA crossover system on Heikin-Ashi data with custom volatility parameter bounds.
-
- |
-| [`cuda 15min v24 - heiknashi v23 entry condition v22 exit condition.py`](https://www.google.com/search?q=cuda%252015min%2520v24%2520-%2520heiknashi%2520v23%2520entry%2520condition%2520v22%2520exit%2520condition.py) | Merges v23 entry rules with v22 profit-percentage target exit mechanisms.
-
- |
-| [`cuda 15min v25 - heiknashi and normal candles combined.py`](https://www.google.com/search?q=cuda%252015min%2520v25%2520-%2520heiknashi%2520and%2520normal%2520candles%2520combined.py) | Evaluates conditions blending raw OHLC candle heights with Heikin-Ashi trend metrics.
-
- |
-| [`cuda 15min v26 - crossover exit only in v25.py`](cuda%2015min%20v26%20-%20crossover exit only in v25.py) | Streamlines v25 to use strict MA crossover exit triggers.
-
- |
-| [`cuda 15min v27 - entry cond changed in v26.py`](cuda%2015min%20v27%20-%20entry cond changed in v26.py) | Refines entry calculations using specific open/close differences from prior candles.
-
- |
-| [`cuda 15min v28 - modified v27.py`](cuda%2015min%20v28%20-%20modified v27.py) | Incorporates dynamic volatility threshold checks, strict high/low candle boundaries, and special large-candle triggers.
-
- |
-| [`cuda 15min v29 - volatality removed from v27.py`](cuda%2015min%20v29%20-%20volatality removed from v27.py) | Strips out standard volatility filters to evaluate pure candle height parameters.
-
- |
-| [`cuda 15min v30 - simultaneous trade in v27.py`](cuda%2015min%20v30%20-%20simultaneous trade in v27.py) | Implements concurrent independent long and short trade tracking on top of v27 logic.
-
- |
-| [`net profit totaller.py`](https://www.google.com/search?q=net%2520profit%2520totaller.py) | Aggregates and sums net profit results across multi-month CSV exports.
-
- |
-| [`Heikanashi trade entry and exit rules.txt`](Heikanashi%20trade entry and exit rules.txt) | Reference document outlining rule definitions for Heikin-Ashi executions.
-
- |
+| [`cuda 15min v1.py`](https://www.google.com/search?q=cuda%252015min%2520v1.py) | Initial EMA 5 / SMA 34 crossover framework with entry variation rules and trailing stop-loss (TSL). |
+| [`cuda 15min v2.py`](https://www.google.com/search?q=cuda%252015min%2520v2.py) | Tests separate SMA 34 entry and exit variation parameters.|
+| [`cuda 15min v3.py`](https://www.google.com/search?q=cuda%252015min%2520v3.py) | Base crossover script optimized around static TSL execution paths.|
+| [`cuda 15min v4.py`](https://www.google.com/search?q=cuda%252015min%2520v4.py) | Adds MA deviation and SMA 34 variation conditions with independent long/short TSL controls.|
+| [`cuda 15min v5.py`](https://www.google.com/search?q=cuda%252015min%2520v5.py) | Restructured parameter ordering and output formatting. |
+| [`cuda 15min v6 deviation.py`](https://www.google.com/search?q=cuda%252015min%2520v6.py) | Focuses specifically on long/short MA deviation parameters paired with trailing stops.|
+| [`cuda 15min v7 variation.py`](https://www.google.com/search?q=cuda%252015min%2520v7.py) | Incorporates SMA 34 variation checks alongside trailing stop-losses.|
+| [`cuda 15min v8.py`](https://www.google.com/search?q=cuda%252015min%2520v8.py) | Permits simultaneous long and short active trades with independent trailing stop management.|
+| [`cuda 15min v9 with atr.py`](https://www.google.com/search?q=cuda%252015min%2520v9.py) | Integrates Average True Range (ATR) threshold filtering into multi-condition entries.|
+| [`cuda 15min v10.py`](https://www.google.com/search?q=cuda%252015min%2520v10.py) | Refines parallel long/short trade execution logic with integrated ATR and MA deviation filters.|
+| [`cuda 15min v11 MACD with static TSL.py`](https://www.google.com/search?q=cuda%252015min%2520v11%2520MACD%2520with%2520static%2520TSI.py) | Combines MACD line/signal crossovers and histogram thresholds with static TSL exits.|
+| [`cuda 15min v12 MACD only.py`](https://www.google.com/search?q=cuda%252015min%2520v12%2520MACD%2520only.py) | Streamlines execution to single-position active trades governed purely by MACD signal crosses.|
+| [`cuda 15min v13 - trading v12 simultaneously.py`](https://www.google.com/search?q=cuda%252015min%2520v13%2520-%2520trading%2520v12%2520simultaneously.py) | Extends MACD strategy to permit independent, simultaneous long and short positions.|
+| [`cuda 15min v14 - new v5 with 21sma.py`](https://www.google.com/search?q=cuda%252015min%2520v14%2520-%2520new%2520v5%2520with%252021sma.py) | Incorporates a 21 SMA benchmark alongside EMA 5 for faster deviation and trend evaluation.|
+| [`cuda 15min v15 - v12 with 21sma.py`](https://www.google.com/search?q=cuda%252015min%2520v15%2520-%2520v12%2520with%252021sma.py) | Integrates MACD entries with a 21 SMA baseline for exit confirmation signals.|
+| [`cuda 15min v16 - v12 with 13sma & sumof_last_four_histogram.py`](https://www.google.com/search?q=cuda%252015min%2520v16%2520-%2520v12%2520with%252013sma%2520%2526%2520sumof_last_four_histogram.py) | Uses a 13 SMA line and incorporates a cumulative sum of the last four MACD histogram bars.|
+| [`cuda 15min v17 - variation using 13sma.py`](https://www.google.com/search?q=cuda%252015min%2520v17%2520-%2520variation%2520using%252013sma.py) | Evaluates entry variations based on 13 SMA slope differentials combined with ATR filters.|
+| [`cuda 15min v18 - v15 with 13macd.py`](https://www.google.com/search?q=cuda%252015min%2520v18%2520-%2520v15%2520with%252013macd.py) | Adjusts MACD fast/slow periods to a (5, 13, 9) configuration for faster responsiveness.|
+| [`cuda 15min v19 - v17 with tsl.py`](https://www.google.com/search?q=cuda%252015min%2520v19%2520-%2520v17%2520with%2520tsl.py) | Appends custom trailing stop-loss metrics to the 13 SMA variation framework.|
+| [`cuda 15min v20 - v17 with 3 candle tecnique.py`](https://www.google.com/search?q=cuda%252015min%2520v20%2520-%2520v17%2520with%25203%2520candle%2520technique.py) | Implements a specialized multi-candle open-close weighting rule across consecutive bars.|
+| [`cuda 15min v21 - heiknashi with 3 candle technique.py`](https://www.google.com/search?q=cuda%252015min%2520v21%2520-%2520heiknashi%2520with%25203%2520candle%2520technique.py) | Converts data to Heikin-Ashi candles, applying 7 SMA slope rules and 3-candle confirmation patterns.|
+| [`cuda 15min v22 - heiknashi 7sma.py`](https://www.google.com/search?q=cuda%252015min%2520v22%2520-%2520heiknashi%25207sma.py) | Combines Heikin-Ashi 7 SMA conditions, ATR thresholds, and dynamic profit-based exit rules.|
+| [`cuda 15min v23 - heiknashi 7-14 ma-crossover.py`](https://www.google.com/search?q=cuda%252015min%2520v23%2520-%2520heiknashi%25207-14%2520ma-crossover.py) | Uses a 7 and 14 SMA crossover system on Heikin-Ashi data with custom volatility parameter bounds.|
+| [`cuda 15min v24 - heiknashi v23 entry condition v22 exit condition.py`](https://www.google.com/search?q=cuda%252015min%2520v24%2520-%2520heiknashi%2520v23%2520entry%2520condition%2520v22%2520exit%2520condition.py) | Merges v23 entry rules with v22 profit-percentage target exit mechanisms.|
+| [`cuda 15min v25 - heiknashi and normal candles combined.py`](https://www.google.com/search?q=cuda%252015min%2520v25%2520-%2520heiknashi%2520and%2520normal%2520candles%2520combined.py) | Evaluates conditions blending raw OHLC candle heights with Heikin-Ashi trend metrics.|
+| [`cuda 15min v26 - crossover exit only in v25.py`](cuda%2015min%20v26%20-%20crossover exit only in v25.py) | Streamlines v25 to use strict MA crossover exit triggers.|
+| [`cuda 15min v27 - entry cond changed in v26.py`](cuda%2015min%20v27%20-%20entry cond changed in v26.py) | Refines entry calculations using specific open/close differences from prior candles.|
+| [`cuda 15min v28 - modified v27.py`](cuda%2015min%20v28%20-%20modified v27.py) | Incorporates dynamic volatility threshold checks, strict high/low candle boundaries, and special large-candle triggers.|
+| [`cuda 15min v29 - volatality removed from v27.py`](cuda%2015min%20v29%20-%20volatality removed from v27.py) | Strips out standard volatility filters to evaluate pure candle height parameters.|
+| [`cuda 15min v30 - simultaneous trade in v27.py`](cuda%2015min%20v30%20-%20simultaneous trade in v27.py) | Implements concurrent independent long and short trade tracking on top of v27 logic.|
+| [`net profit totaller.py`](https://www.google.com/search?q=net%2520profit%2520totaller.py) | Aggregates and sums net profit results across multi-month CSV exports.|
+| [`Heikanashi trade entry and exit rules.txt`](Heikanashi%20trade entry and exit rules.txt) | Reference document outlining rule definitions for Heikin-Ashi executions.|
 
 ---
 
